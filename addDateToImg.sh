@@ -51,13 +51,13 @@ for file in "$dir"/*.jpg; do
             if [ "$original_width" -gt "$original_height" ]; then
                 # Landscape photo
                 resize_dims="${height}x${width}"  # Target size for landscape
-                xannotate=170
-                yannotate=270
+                xannotate=150
+                yannotate=260
             else
                 # Portrait photo
                 resize_dims="${width}x${height}"  # Target size for portrait
-                xannotate=110
-                yannotate=175
+                xannotate=120
+                yannotate=100
             fi
 
             # Add date to the image, changing resolution and size
